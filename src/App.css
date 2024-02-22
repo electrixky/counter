@@ -50,3 +50,18 @@
     padding: 0 20px;
 }
 
+.input-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.input {
+    margin-left: 15px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #61dafb;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
