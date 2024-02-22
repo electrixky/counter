@@ -64,7 +64,7 @@ export const Counter = ({
             </div>
             <div className={"counter-buttons"}>
                 {!isSettingsCounter ? <>
-                        <Button callBack={onIncrement} title={"inc"}/>
+                        <Button callBack={onIncrement} title={"inc"} disabled={value === maxValue}/>
                         <Button callBack={onReset} title={"reset"}/></>
                     : <Button callBack={onSet} title={"set"}/>
                 }

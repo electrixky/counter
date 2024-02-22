@@ -50,6 +50,10 @@
     padding: 0 20px;
 }
 
+.button-disabled {
+    opacity: 0.5;
+}
+
 .input-title {
     font-size: 30px;
     font-weight: bold;

@@ -3,10 +3,11 @@ import React from 'react';
 type ButtonPropsType = {
     title: string
     callBack?: () => void
+    disabled?: boolean
 }
 
 
-export const Button = ({title, callBack}: ButtonPropsType) => {
+export const Button = ({title, callBack, disabled}: ButtonPropsType) => {
     const callBackHandler = () => {
         if (callBack)
             callBack()
@@ -14,7 +15,8 @@ export const Button = ({title, callBack}: ButtonPropsType) => {
 
     return (
         <div>
-            <button onClick={callBackHandler} className={"counter-button"}>{title}</button>
+            <button onClick={callBackHandler} className={disabled ? "counter-button button-disabled" : "counter-button"}
+                    disabled={disabled}>{title}</button>
         </div>
     );
 };
